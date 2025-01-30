@@ -213,6 +213,34 @@ GROUP BY
 104,838; 199,013; 109,645; 27,688; 35,202
 ```
 
+My answer was judged to be incorrect. Below are the command and answer from the solution. However, this command does not fully match the question (in my point of view).
+
+> Command (solution)
+```sql
+SELECT
+  CASE
+    WHEN trip_distance <= 1 THEN 'Up to 1 mile'
+    WHEN trip_distance > 1 AND trip_distance <= 3 THEN '1 to 3 miles'
+    WHEN trip_distance > 3 AND trip_distance <= 7 THEN '3 to 7 miles'
+    WHEN trip_distance > 7 AND trip_distance <= 10 THEN '7 to 10 miles'
+    ELSE 'Over 10 miles'
+  END AS distance_category,
+  COUNT(*) AS trip_count
+FROM
+  green_taxi_trips
+WHERE
+  CAST(lpep_pickup_datetime AS DATE) >= '2019-10-01'
+  AND CAST(lpep_pickup_datetime AS DATE) < '2019-11-01'
+  AND CAST(lpep_dropoff_datetime AS DATE) >= '2019-10-01'
+  AND CAST(lpep_dropoff_datetime AS DATE) < '2019-11-01'
+GROUP BY
+  distance_category
+```
+> Answer (solution)
+```
+104,802; 198,924; 109,603; 27,678; 35,189
+```
+
 
 ## Question 4. Longest trip for each day
 
