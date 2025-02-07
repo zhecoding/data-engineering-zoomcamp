@@ -60,7 +60,7 @@ Complete the Quiz shown below. It’s a set of 6 multiple-choice questions to te
 SELECT
   COUNT(*)
 FROM
-  splendid-strand-448621-u2.kestra_dataset.yellow_tripdata
+  `splendid-strand-448621-u2.kestra_dataset.yellow_tripdata`
 WHERE
   filename LIKE '%2020%'
 ```
@@ -80,7 +80,7 @@ WHERE
 SELECT
   COUNT(*)
 FROM
-  splendid-strand-448621-u2.kestra_dataset.green_tripdata
+  `splendid-strand-448621-u2.kestra_dataset.green_tripdata`
 WHERE
   filename LIKE '%2020%'
 ```
@@ -100,7 +100,7 @@ WHERE
 SELECT
   COUNT(*)
 FROM
-  splendid-strand-448621-u2.kestra_dataset.yellow_tripdata
+  `splendid-strand-448621-u2.kestra_dataset.yellow_tripdata`
 WHERE
   filename LIKE '%2021-03%'
 ```
