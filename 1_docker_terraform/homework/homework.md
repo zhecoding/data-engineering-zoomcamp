@@ -34,9 +34,8 @@ pip --version
 ```
 
 > My Answer
-```
-24.3.1
-```
+
+> 24.3.1
 
 
 ## Question 2. Understanding Docker networking and docker-compose
@@ -84,9 +83,8 @@ volumes:
 If there are more than one answers, select only one of them
 
 > My Answer
-```
-db:5432
-```
+
+> db:5432
 
 
 ##  Prepare Postgres
@@ -186,9 +184,8 @@ GROUP BY
   distance_category
 ```
 > My Answer (first attempt)
-```
-104,830; 198,995; 109,642; 27,686; 35,201
-```
+
+> 104,830; 198,995; 109,642; 27,686; 35,201
 
 The command above should be correct, but the output does not match any of the options. If I modify the command a bit as shown below, the output can match one of the options (although it is not rigorous enough in my opinion).
 
@@ -209,9 +206,8 @@ GROUP BY
   distance_category
 ```
 > My Answer (second attempt)
-```
-104,838; 199,013; 109,645; 27,688; 35,202
-```
+
+> 104,838; 199,013; 109,645; 27,688; 35,202
 
 My answer was judged to be incorrect. Below are the command and answer from the solution. However, this command does not fully match the question (in my point of view).
 
@@ -237,9 +233,8 @@ GROUP BY
   distance_category
 ```
 > Answer (solution)
-```
-104,802; 198,924; 109,603; 27,678; 35,189
-```
+
+> 104,802; 198,924; 109,603; 27,678; 35,189
 
 
 ## Question 4. Longest trip for each day
@@ -265,9 +260,8 @@ WHERE
   trip_distance = (SELECT MAX(trip_distance) FROM green_taxi_trips)
 ```
 > My Answer
-```
-2019-10-31
-```
+
+> 2019-10-31
 
 
 ## Question 5. Three biggest pickup zones
@@ -302,9 +296,8 @@ ORDER BY
 LIMIT 3
 ```
 > My Answer
-```
-East Harlem North, East Harlem South, Morningside Heights
-```
+
+> East Harlem North, East Harlem South, Morningside Heights
 
 
 ## Question 6. Largest tip
@@ -342,9 +335,8 @@ ORDER BY
 LIMIT 1
 ```
 > My Answer
-```
-JFK Airport
-```
+
+> JFK Airport
 
 
 ## Terraform
@@ -353,7 +345,7 @@ In this section homework we'll prepare the environment by creating resources in 
 
 In your VM on GCP/Laptop/GitHub Codespace install Terraform. 
 Copy the files from the course repo
-[here](../../../01-docker-terraform/1_terraform_gcp/terraform) to your VM/Laptop/GitHub Codespace.
+[here](https://github.com/DataTalksClub/data-engineering-zoomcamp/tree/main/01-docker-terraform/1_terraform_gcp/terraform) to your VM/Laptop/GitHub Codespace.
 
 Modify the files as necessary to create a GCP Bucket and Big Query Dataset.
 
